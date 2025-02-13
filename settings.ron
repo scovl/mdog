@@ -1,0 +1,44 @@
+(
+    event_dispatcher: (
+        // Dispatcher settings if needed
+    ),
+    event_handler: (
+        // Mouse sensitivity settings
+        Sensitivity: 1.0,
+        Parachute_Sensitivity: 0.3,
+        Mouse_Smoothing_Level: 5,
+
+        // Keyboard and mouse bindings to controller actions
+        binds: {
+            // Movement keys (WASD)
+            Keyboard(W): Analog(0.0, 1.0),    // Left stick up
+            Keyboard(S): Analog(0.0, -1.0),   // Left stick down
+            Keyboard(A): Analog(-1.0, 0.0),   // Left stick left
+            Keyboard(D): Analog(1.0, 0.0),    // Left stick right
+
+            // Action buttons
+            Keyboard(Space): Button(A),        // A button (jump)
+            Keyboard(LShift): Button(B),       // B button (run/dodge)
+            Keyboard(E): Button(X),            // X button (action)
+            Keyboard(Q): Button(Y),            // Y button (interact)
+
+            // Mouse buttons
+            Mouse(Left): Button(RightTrigger), // Right trigger (shoot)
+            Mouse(Right): Button(LeftTrigger), // Left trigger (aim)
+
+            // Special buttons
+            Keyboard(Tab): Button(Back),       // Back button (menu)
+            Keyboard(Escape): Button(Start),   // Start button (pause)
+
+            // Shoulder buttons
+            Keyboard(R): Button(RightShoulder), // Right bumper
+            Keyboard(F): Button(LeftShoulder),  // Left bumper
+
+            // D-Pad
+            Keyboard(Up): Button(DPadUp),      // D-pad up
+            Keyboard(Down): Button(DPadDown),   // D-pad down
+            Keyboard(Left): Button(DPadLeft),   // D-pad left
+            Keyboard(Right): Button(DPadRight), // D-pad right
+        },
+    ),
+) 
